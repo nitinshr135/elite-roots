@@ -163,14 +163,14 @@ NEXT_PUBLIC_CONTACT_EMAIL=hello@makhanadelights.com
 
 ## 📄 License
 
-This project is proprietary and confidential. All rights reserved by Makhana Delights.
+This project is proprietary and confidential. All rights reserved by Elite Roots.
 
 ## 📞 Support
 
 For technical support or questions:
-- Email: eliteroots@gmail.com
-- Phone: +91 8759751682
-- Address: Kolkata, West Bengal, India
+- Email: elitesroots@gmail.com
+- Phone: +91 81004 24891
+- Address: Darbhanga, Bihar
 
 ## 🎉 Launch Checklist
 

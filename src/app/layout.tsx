@@ -1,16 +1,18 @@
 import type { Metadata } from 'next'
+import 'aos/dist/aos.css';
 import { Inter } from 'next/font/google'
 import './globals.css'
+import AOSProvider from '@/components/AOSProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Elite Roots - Premium Fox Nuts | Healthy Indian Snacking',
-  description: 'Discover the finest quality Fox Nuts (Makhana) - a traditional Indian superfood. High protein, low calorie, crunchy snacks perfect for healthy snacking. Products coming soon!',
-  keywords: 'fox nuts, makhana, indian snacks, healthy snacking, protein rich, traditional indian food, lotus seeds, crunchy snacks, gluten free, natural snacks',
-  authors: [{ name: 'Elite Roots' }],
-  creator: 'Elite Roots',
-  publisher: 'Elite Roots',
+  title: 'Elites Roots - Deep Roots. Pure Nutrition. Global Vision.',
+  description: 'A proudly Bihar-born brand, deeply rooted in Mithila and North Bihar - the heartland of the world\'s finest foxnuts (makhana). Premium quality, naturally grown, rich in protein and antioxidants.',
+  keywords: 'elites roots, fox nuts, makhana, bihar makhana, mithila, darbhanga, indian superfood, healthy snacks, protein rich, traditional indian food, lotus seeds, crunchy snacks, gluten free, natural snacks, bihar farmers',
+  authors: [{ name: 'Elites Roots' }],
+  creator: 'Elites Roots',
+  publisher: 'Elites Roots',
   formatDetection: {
     email: false,
     address: false,
@@ -18,16 +20,16 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://eliteroots.com'),
   openGraph: {
-    title: 'Elite Roots - Premium Fox Nuts | Healthy Indian Snacking',
-    description: 'Discover the finest quality Fox Nuts (Makhana) - a traditional Indian superfood. High protein, low calorie, crunchy snacks perfect for healthy snacking.',
+    title: 'Elites Roots - Deep Roots. Pure Nutrition. Global Vision.',
+    description: 'A proudly Bihar-born brand bringing the world\'s finest foxnuts from Mithila and North Bihar. Deep Roots. Pure Nutrition. Global Vision.',
     url: 'https://eliteroots.com',
-    siteName: 'Elite Roots',
+    siteName: 'Elites Roots',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Premium Fox Nuts (Makhana) - Healthy Indian Snacking',
+        alt: 'Elites Roots - Premium Fox Nuts (Makhana) from Bihar',
       },
     ],
     locale: 'en_IN',
@@ -35,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Elite Roots - Premium Fox Nuts | Healthy Indian Snacking',
-    description: 'Discover the finest quality Fox Nuts (Makhana) - a traditional Indian superfood.',
+    title: 'Elites Roots - Deep Roots. Pure Nutrition. Global Vision.',
+    description: 'A proudly Bihar-born brand bringing the world\'s finest foxnuts from Mithila and North Bihar.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -62,7 +64,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" href="/favicon.ico" />
+      </head>
+      <body className={inter.className}>
+        <AOSProvider>{children}</AOSProvider>
+      </body>
     </html>
   )
 }

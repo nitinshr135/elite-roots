@@ -1,7 +1,7 @@
 {
   "name": "elite-roots",
   "version": "1.0.0",
-  "description": "Elite Roots - Premium Fox Nuts (Makhana) selling website - A modern landing page for healthy Indian snacking",
+  "description": "Elites Roots - Deep Roots. Pure Nutrition. Global Vision. A proudly Bihar-born brand bringing the world's finest foxnuts from Mithila and North Bihar.",
   "private": true,
   "keywords": [
     "fox-nuts",
@@ -12,7 +12,7 @@
     "typescript",
     "tailwindcss"
   ],
-  "author": "Elite Roots",
+  "author": "Elites Roots",
   "license": "UNLICENSED",
   "scripts": {
     "dev": "next dev --turbopack",
@@ -23,6 +23,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "next": "15.4.10",
     "react": "19.1.0",
     "react-dom": "19.1.0",

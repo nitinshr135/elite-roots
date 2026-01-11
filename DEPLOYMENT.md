@@ -206,6 +206,6 @@ As your business grows:
 
 ---
 
-**Need Help?** Contact our support team at eliteroots@gmail.com
+**Need Help?** Contact our support team at elitesroots@gmail.com
 
 **Happy Deploying! 🎉**
