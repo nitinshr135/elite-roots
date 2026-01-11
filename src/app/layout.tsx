@@ -1,8 +1,6 @@
 import type { Metadata } from 'next'
-import 'aos/dist/aos.css';
 import { Inter } from 'next/font/google'
 import './globals.css'
-import AOSProvider from '@/components/AOSProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -68,9 +66,6 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" href="/favicon.ico" />
       </head>
-      <body className={inter.className}>
-        <AOSProvider>{children}</AOSProvider>
-      </body>
     </html>
   )
 }
